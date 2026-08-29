@@ -10,6 +10,7 @@
 		<meta name="application-name" content="{{.SiteName}}">
 		<meta name="application-url" content="{{.Host}}">
 		<meta property="og:site_name" content="{{.SiteName}}" />
+
 	</head>
 	<body {{template "body-attrs" .}}>
 		<div id="overlay"></div>
@@ -67,7 +68,7 @@
 		</div>
 
 		{{ template "footer" . }}
-		
+
 		{{if not .JSDisabled}}
 		<script type="text/javascript" src="/js/menu.js"></script>
 		<script type="text/javascript">
